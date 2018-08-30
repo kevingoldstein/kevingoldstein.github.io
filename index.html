@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/fonts/">
+    <script src="/index.js"></script>
+    <title>NS verhalen</title>
+</head>
+
+<body>
+    <nav>
+        <a id="logo" href="index.html"><img src="img/nsLogo.svg" alt="NS logo"></a>
+        <ul>
+            <li>
+                <a href="leeslijst.html"><img id="saved" src="img/save1.svg" alt="saved">Leeslijst</a>
+            </li>
+            <li>
+                <form>
+                    <input type="search" name="zoeken" placeholder="Zoeken">
+                </form>
+            </li>
+            <li>
+                <a href="login.html"><img src="img/acc.svg" alt="account">Mijn NS</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="img/banner.jpg" alt="banner">
+        <h1>NS Verhalen</h1>
+    </header>
+
+    <main>
+        <aside class="filter">
+            <form class="filterForm">
+                <h2>Genre</h2>
+                <select name="catog">
+                    <option value="alle">Alle</option>
+                    <option value="horror">Horror</option>
+                    <option value="humor">Humor</option>
+                    <option value="musicaal">Musicaal</option>
+                    <option value="mystery">Mystery</option>
+                </select>
+            </form>
+            <form class="filterForm">
+                <h2>Reistijd</h2>
+                <select name="tijd">
+                    <option value="all"></option>
+                    <option value="kort">5 minuten</option>
+                    <option value="mid">10 minuten</option>
+                    <option value="lang">15 minuten</option>
+                </select>
+                <input type="submit" value="Filter  &#62;">
+            </form>
+            <ul>
+                <li>
+                    <p>Sorteren</p>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <article class="cat">
+                <img src="img/misdaad.jpg" alt="misdaad">
+                <h2>Misdaad</h2>
+                <a href="">Meer misdaad ></a>
+            </article>
+            <article class="story">
+                <img src="img/AlzP.png" alt="alzheimer">
+                <h3>Alzheimer</h3>
+                <p>Ik stap uit, euh… Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente. Wit met blauw. Kom. Lijn 12. Of was het 21? Ik weet het niet. Ik stap uit en loop achter een wagentje aan. Van wie is dat wagentje? […] </p>
+                <a href="verhaal2.html">lees Alzheimer</a>
+                <button class="like"><span>1</span></button>
+                <button class="opslaan"></button>
+            </article>
+            <article class="story">
+                <img src="img/CockP.png" alt="decock">
+                <h3>De Cock</h3>
+                <p>tationsplein, 12.00 uur in de middag De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder zijn roes uit te slapen. Sinds de dood van hun schepper[…]</p>
+                <a href="verhaal1.html">lees De Cock</a>
+                <button id="like" class="like"><span>1</span></button>
+                <button class="opslaan"></button>
+            </article>
+            <article class="story">
+                <img src="img/lfP.png" alt="lange frans">
+                <h3>Lange Frans</h3>
+                <p>Uh, uh, dit is Lange Frans, uh, uh Daar gaan we dan… Drop die beat. (De beat wordt gedropt, Lange Frans gaat er vol in:) Het is dinsdagochtend, zoveel februari Ik stap uit de bus[…]</p>
+                <a href="verhaal3.html">lees Lange Frans</a>
+                <button class="like"><span>1</span></button>
+                <button class="opslaan"></button>
+            </article>
+            <article class="story">
+                <img src="img/zombie.png" alt="zombie">
+                <h3>Zombie</h3>
+                <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees. Het is gekkenwerk dat ik hier ben, maar de brandstof van de bus is op.[…]</p>
+                <a>lees Zombie</a>
+                <button class="like"><span>1</span></button>
+                <button class="opslaan"></button>
+            </article>
+        </section>
+    </main>
+
+</html>

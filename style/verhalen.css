@@ -1,0 +1,254 @@
+/* GLOBAL */
+
+* {
+    font-family: 'nsSans';
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: lightgray;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    top: 3.7em;
+}
+
+a {
+    color: #2D77BD;
+    text-decoration: none;
+    transition: box-shadow .15s ease-in-out;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+}
+
+
+/* NAVIGATIE BAR */
+
+nav {
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    background: #fff;
+    left: 0;
+    min-height: 3.75rem;
+    min-width: 20rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+}
+
+#logo {
+    display: inline-block;
+    position: relative;
+    top: 0.3em;
+    border: none;
+    margin-left: auto;
+    width: 24%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    width: 64%;
+}
+
+ul img {
+    height: 1em;
+    top: .1em;
+    position: relative;
+    margin-right: .5em;
+}
+
+nav ul li {
+    width: 6.5em;
+    margin-left: 2rem;
+    align-content: space-between;
+}
+
+li form input {
+    background: url(../img/zoek.svg) no-repeat 0px center;
+    background-size: 1em;
+    border: none;
+    padding: 0 0 0 1.5em;
+    width: 6.5em;
+}
+
+.achieve {
+    display: flex;
+    position: fixed;
+    top: 10em;
+    right: -20em;
+    z-index: 10;
+    background-color: #003082;
+    width: 20%;
+    padding: .5em;
+    transition: 2s;
+}
+
+.inkomen {
+    right: 0em;
+    transition: 2s;
+}
+
+.achieve img {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+.achieve a {
+    text-align: center;
+    color: white;
+    font-weight: 50;
+    margin: auto;
+}
+
+
+/* VERHAAL */
+
+main img {
+    width: 100%;
+}
+
+.Tab {
+    display: none;
+}
+
+.Mob {
+    display: none;
+}
+
+section {
+    top: 0;
+    display: flex;
+    width: auto;
+    margin: 0 auto 0
+}
+
+.like {
+    background: url(../img/like1.svg) no-repeat center;
+    background-size: 1.5em;
+    background-color: white;
+    width: 3em;
+    height: 3em;
+    position: relative;
+    top: -1em;
+    margin-left: auto;
+    box-shadow: 0 .1em 0 rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.like:focus {
+    outline: none;
+}
+
+.share {
+    background: url(../img/delen.svg) no-repeat center;
+    background-size: 1.5em;
+    background-color: white;
+    width: 3em;
+    height: 3em;
+    position: relative;
+    top: -1em;
+    box-shadow: 0 .1em 0 rgba(0, 0, 0, 0.3);
+    border: none;
+    margin-right: auto;
+}
+
+.counter {
+    font-size: .5em;
+    position: relative;
+    top: -2em;
+    right: -2em;
+    color: #003082;
+}
+
+.opslaan {
+    width: 2em;
+    height: 2em;
+    background: url(../img/save1.svg) no-repeat center;
+    background-size: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    border: none;
+    opacity: .5;
+    background-color: white;
+}
+
+
+/* TOT 64 em */
+
+@media screen and (max-width: 64em) {
+    nav ul li a {
+        font-size: 0;
+    }
+    ::-webkit-input-placeholder {
+        color: transparent;
+    }
+    nav ul li {
+        width: 2em;
+    }
+}
+
+
+/* TOT 48 em */
+
+@media screen and (max-width: 48em) {
+    .Tab {
+        display: block;
+    }
+    .Desk {
+        display: none;
+    }
+    .achieve {
+        width: 30%;
+    }
+    .achieve img {
+        width: 1em;
+        height: 1em;
+    }
+    .achieve a {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .achieve {
+        width: 30%;
+    }
+    .achieve img {
+        width: 1em;
+        height: 1em;
+        margin-right: .5em;
+    }
+    .achieve a {
+        font-size: .5em;
+    }
+}
+
+
+/* TOT 24 em */
+
+@media screen and (max-width: 24em) {
+    .Tab {
+        display: none;
+    }
+    .Mob {
+        display: block;
+    }
+}

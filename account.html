@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/account.css">
+    <link rel="stylesheet" href="/style/fonts/">
+    <script src="/index.js"></script>
+    <title>NS verhalen</title>
+</head>
+
+<body>
+    <nav>
+        <a id="logo" href="index.html"><img src="/img/nsLogo.svg" alt="NS logo"></a>
+        <ul>
+            <li>
+                <a id="saved" href="leeslijst.html"><img src="/img/save1.svg" alt="saved">Leeslijst</a>
+            </li>
+            <li>
+                <form>
+                    <input type="search" name="zoeken" placeholder="Zoeken..">
+                </form>
+            </li>
+            <li>
+                <a href="login.html"><img src="/img/acc.svg" alt="account">Mijn NS</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>
+        Welkom bij uw NS Account
+        </h1>
+            <div class="acc">
+                <form action="#">
+                    <fieldset>
+                        <legend>Aanmelden</legend>
+                        <label for="name">Gebruikersnaam</label>
+                        <input id="name" readonly>
+                        <label for="password">Wachtwoord</label>
+                        <input id="password" readonly>
+                        <label for="email">Email</label>
+                        <input id="email" readonly>
+                        <a>Gegevens aanpassen</a>
+                    </fieldset>
+                </form>
+                <div class="regist">
+                    <a href="trofee.html" class="trof">Mijn trofeeën</a>
+                    <a href="leeslijst.html" class="list">Mijn leeslijst</a>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
